@@ -80,4 +80,11 @@ With the project “**ETL Project and Data Search Application**”, our goal is 
   + Create Database and table to store data
   + Then we will put data into
 - The work to be performed is specified in the `DatabaseManager()` class in the `ETL_to_Database.ipynb` file.
-# (Phase 2): Overview and Forecasting 
+# (Phase 2): Build Web App
+![image](https://github.com/user-attachments/assets/b7ff6bb6-8f70-473e-8000-b674f43ed01a)
+
+For Web App I will use Streamlit, a framework that allows running App with localhost address
+- I connect to Database and create & present my website.
+- Next is the part of creating function `recommend()`  and setting up the result display `paginate_dataframe()` function.
+- Finally, set up the feedback and problem contact section.
+All the above steps are in the file App.py

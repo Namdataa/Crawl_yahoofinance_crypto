@@ -39,13 +39,13 @@ With the project “**ETL Project and Data Search Application**”, our goal is 
 - The work done and the results are in the file `Crawl_Vietnamwork.ipynb`
 ## Transform Data:
 - Since the data is taken from the website, the data is quite clean, so here I just handle it simply as follows :
-  + Delete index column
+  + Delete `index` column
   + Reselect DataFrame that does not contain empty work locations
-  + Treat empty values ​​​​to “ Không hiển thị “
-  + Convert “>” to “,” in “Ngành nghề” column
-  + Convert “\n” to “,” in “Từ khóa” column
-  + Create “tag” column by merging “Kỹ năng”, “Ngành nghề”, “Từ khóa”, “Công ty”, “Lĩnh vực” columns
-  + Delete “Từ khóa” column
+  + Treat empty values ​​​​to ` Không hiển thị `
+  + Convert `>` to `,` in `Ngành nghề` column
+  + Convert `\n` to `,` in `Từ khóa` column
+  + Create `tag` column by merging `Kỹ năng`, `Ngành nghề`, `Từ khóa`, `Công ty`, `Lĩnh vực` columns
+  + Delete `Từ khóa` column
 ### Data Cleaned
 + `Tên công việc`: Job title or position being recruited.
 + `Ngày đăng`: The date the job posting was made public.
@@ -87,4 +87,4 @@ For Web App I will use Streamlit, a framework that allows running App with local
 - I connect to Database and create & present my website.
 - Next is the part of creating function `recommend()`  and setting up the result display `paginate_dataframe()` function.
 - Finally, set up the feedback and problem contact section.
-All the above steps are in the file App.py
+All the above steps are in the file `App.py`
